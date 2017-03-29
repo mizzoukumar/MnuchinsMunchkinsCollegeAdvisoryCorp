@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootLayoutController">
+   <children>
+      <Button fx:id="highScoresStem" layoutX="274.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleHighScoresStemSize" text="1400-1600" />
+      <Button fx:id="mediumScoresStem" layoutX="274.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleMediumScoresStemSize" text="1150-1390" />
+      <Button fx:id="lowScoresStem" layoutX="274.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleLowScoresStemSize" text="Below 1150" />
+   </children>
+</AnchorPane>

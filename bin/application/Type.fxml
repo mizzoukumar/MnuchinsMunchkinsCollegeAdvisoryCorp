@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootLayoutController">
+   <children>
+      <Button fx:id="Stem" layoutX="53.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleScores" text="I love STEM and technology!" />
+      <Button fx:id="LibArts" layoutX="277.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleScoresLibArts" text="I'm more of a renaissance man. Liberal Arts is my thing!" />
+   </children>
+</AnchorPane>

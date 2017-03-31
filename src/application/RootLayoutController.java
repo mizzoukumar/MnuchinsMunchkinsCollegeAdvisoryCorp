@@ -40,7 +40,7 @@ public class RootLayoutController {
 	private ChoiceBox<String> scores;
 	*/
 
-	
+//buttons for all fields for second view
 	@FXML
 	private Button lowScoresLibArts;
 	
@@ -61,7 +61,7 @@ public class RootLayoutController {
 	
 	
 	
-
+//buttons for all fields displayed in third view
 	
 	@FXML
 	private Button smallLowScoresStem;
@@ -100,7 +100,7 @@ public class RootLayoutController {
 	private Button bigHighScoresLibArts;
 	
 	
-	
+//button for web view and for final view
 	
 	@FXML
 	private WebView myWebView;
@@ -115,8 +115,12 @@ public class RootLayoutController {
 	this.mainApp = mainApp;
 	}
 	
+	/**
+	 * @param Accepts parameter
+	 * @exception IO exception
+	 */
 	@FXML
-	private void handleType(ActionEvent event) throws IOException{
+	public void handleType(ActionEvent event) throws IOException{
 	//Goes to 2nd view when button is selected
 		
 		Stage stage;
@@ -145,8 +149,17 @@ public class RootLayoutController {
 	@FXML
 	private Button Stem;
 	
+//method to open STEM fxml that gets STEM fxml and opens STEM page
+	
+	
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
 	@FXML
-	private void handleScores(ActionEvent event) throws IOException{
+public void handleScores(ActionEvent event) throws IOException{
 		
 		Stage stage;
 		Parent root;
@@ -165,11 +178,21 @@ public class RootLayoutController {
 	}
 }
 	
-	@FXML
-	private Button LibArts;
 	
 	@FXML
-	private void handleScoresLibArts(ActionEvent event) throws IOException{
+	private Button LibArts;
+//method to open view specific to Liberal Arts, that brings up score ranges for Liberal Arts option
+	
+	
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	
+	@FXML
+	public void handleScoresLibArts(ActionEvent event) throws IOException{
 		
 		Stage stage;
 		Parent root;
@@ -191,10 +214,15 @@ public class RootLayoutController {
 	
 	
 	
-	
-	
+//handleLowScoresLibArtsSize gets fxml entitled LibArts Low, with options for student who selects low score range and Lib Arts
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
 	@FXML
-	private void handleLowScoresLibArtsSize(ActionEvent event) throws IOException{
+	public void handleLowScoresLibArtsSize(ActionEvent event) throws IOException{
 		
 		Stage stage;
 		Parent root;
@@ -209,9 +237,16 @@ public class RootLayoutController {
 			stage.initOwner(lowScoresLibArts.getScene().getWindow());
 			stage.showAndWait();
 }}
+//Opens view with options for student who selects middle score range and Lib Arts	
 	
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
 	@FXML
-	private void handleMediumScoresLibArtsSize(ActionEvent event) throws IOException{
+	public void handleMediumScoresLibArtsSize(ActionEvent event) throws IOException{
 		
 		Stage stage;
 		Parent root;
@@ -226,9 +261,16 @@ public class RootLayoutController {
 			stage.initOwner(mediumScoresLibArts.getScene().getWindow());
 			stage.showAndWait();
 }}
+//Opens view with options for student who selects high score range and Lib Arts	
 	
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
 	@FXML
-	private void handleHighScoresLibArtsSize(ActionEvent event) throws IOException{
+	public void handleHighScoresLibArtsSize(ActionEvent event) throws IOException{
 		
 		Stage stage;
 		Parent root;
@@ -245,9 +287,16 @@ public class RootLayoutController {
 		}
 	}	
 	
+//Opens view with options for student who selects high score range and STEM
 
-@FXML
-private void handleHighScoresStemSize(ActionEvent event) throws IOException{
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	@FXML
+public void handleHighScoresStemSize(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -264,8 +313,16 @@ private void handleHighScoresStemSize(ActionEvent event) throws IOException{
 
 }}
 
-@FXML
-private void handleMediumScoresStemSize(ActionEvent event) throws IOException{
+//Opens view with options for student who selects middle score range and STEM
+
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	@FXML
+public void handleMediumScoresStemSize(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -282,8 +339,16 @@ private void handleMediumScoresStemSize(ActionEvent event) throws IOException{
 
 }}
 
-@FXML
-private void handleLowScoresStemSize(ActionEvent event) throws IOException{
+//Opens view with options for student who selects low score range and STEM
+
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	@FXML
+public void handleLowScoresStemSize(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -308,8 +373,16 @@ private void handleLowScoresStemSize(ActionEvent event) throws IOException{
 
 
 
-@FXML
-private void handleBigLowScoresStem(ActionEvent event) throws IOException{
+//Opens view with options for student who selects big school, low score range and STEM
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	
+	@FXML
+public void handleBigLowScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -325,9 +398,16 @@ private void handleBigLowScoresStem(ActionEvent event) throws IOException{
 		stage.showAndWait();
 
 }}
+//Opens view with options for student who selects big school, mid score range and STEM
 
-@FXML
-private void handleBigMediumScoresStem(ActionEvent event) throws IOException{
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	@FXML
+public void handleBigMediumScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -344,9 +424,16 @@ private void handleBigMediumScoresStem(ActionEvent event) throws IOException{
 
 }}
 
+//Opens view with options for student who selects big school, high score range and STEM
 
-@FXML
-private void handleBigHighScoresStem(ActionEvent event) throws IOException{
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	@FXML
+public void handleBigHighScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -362,9 +449,15 @@ private void handleBigHighScoresStem(ActionEvent event) throws IOException{
 		stage.showAndWait();
 
 }}
-
-@FXML
-private void handleSmallHighScoresStem(ActionEvent event) throws IOException{
+//Opens view with options for student who selects small school, high score range and STEM
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
+	@FXML
+public void handleSmallHighScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -381,9 +474,15 @@ private void handleSmallHighScoresStem(ActionEvent event) throws IOException{
 
 }}
 
-
+	/**
+	 * @param event
+	 * @throws IOException
+	 * @return
+	 * @see
+	 */
 @FXML
-private void handleSmallMediumScoresStem(ActionEvent event) throws IOException{
+
+public void handleSmallMediumScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -400,9 +499,17 @@ private void handleSmallMediumScoresStem(ActionEvent event) throws IOException{
 
 }}
 
+//Opens view with options for student who selects small school, low score range and STEM
 
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleSmallLowScoresStem(ActionEvent event) throws IOException{
+public void handleSmallLowScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -422,9 +529,16 @@ private void handleSmallLowScoresStem(ActionEvent event) throws IOException{
 
 
 
-
+//Opens view with options for student who selects big school, high score range and Liberal arts
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleBigLowScoresLibArts(ActionEvent event) throws IOException{
+
+public void handleBigLowScoresLibArts(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -440,9 +554,16 @@ private void handleBigLowScoresLibArts(ActionEvent event) throws IOException{
 		stage.showAndWait();
 
 }}
+//Opens view with options for student who selects big school, middle score range and Liberal arts
 
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleBigMediumScoresLibArts(ActionEvent event) throws IOException{
+public void handleBigMediumScoresLibArts(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -459,9 +580,16 @@ private void handleBigMediumScoresLibArts(ActionEvent event) throws IOException{
 
 }}
 
+//Opens view with options for student who selects big school, high score range and Liberal arts
 
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleBigHighScoresLibArts(ActionEvent event) throws IOException{
+public void handleBigHighScoresLibArts(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -477,9 +605,16 @@ private void handleBigHighScoresLibArts(ActionEvent event) throws IOException{
 		stage.showAndWait();
 
 }}
+//Opens view with options for student who selects small school, high score range and Liberal arts
 
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleSmallHighScoresLibArts(ActionEvent event) throws IOException{
+public void handleSmallHighScoresLibArts(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -496,9 +631,16 @@ private void handleSmallHighScoresLibArts(ActionEvent event) throws IOException{
 
 }}
 
+//Opens view with options for student who selects small school, medium score range and Liberal arts
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 
 @FXML
-private void handleSmallMediumScoresLibArts(ActionEvent event) throws IOException{
+public void handleSmallMediumScoresLibArts(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -515,9 +657,15 @@ private void handleSmallMediumScoresLibArts(ActionEvent event) throws IOExceptio
 
 }}
 
-
+//Opens view with options for student who selects small school, low score range and Liberal arts
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleSmallLowScoresLibArts(ActionEvent event) throws IOException{
+public void handleSmallLowScoresLibArts(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -544,9 +692,14 @@ private void handleSmallLowScoresLibArts(ActionEvent event) throws IOException{
 
 
 
-
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleUrbanLowScoresStem(ActionEvent event) throws IOException{
+public void handleUrbanLowScoresStem(ActionEvent event) throws IOException{
 	
 	Stage stage;
 	Parent root;
@@ -565,16 +718,25 @@ private void handleUrbanLowScoresStem(ActionEvent event) throws IOException{
 
 
 
+//ChoiceBox that accepts strings called "majors"
 
 @FXML
 private ChoiceBox<String> majors;
+//method that sets majors to specific ChoiceBox options
 
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
 @FXML
-private void handleMajors(){
+public void handleMajors(){
 	majors.setItems(FXCollections.observableArrayList(
-		"Physics", "Chemistry", "Bio")
+		"Physics", "Chemistry", "Biology")
 			);
 
+//Generates switch statement for each major that opens a Web View directing to specific college website
 majors.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
 	@Override
 	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
@@ -582,19 +744,552 @@ majors.getSelectionModel().selectedIndexProperty().addListener(new ChangeListene
 		
 		case "Physics": {
 			WebEngine webEngine = myWebView.getEngine();
-			webEngine.load("http://www.google.com");
+			webEngine.load("http://www.gatech.edu");
 			break;
 		}
 		
 		case "Chemistry":{
 			WebEngine webEngine = myWebView.getEngine();
-			webEngine.load("yahoo.com");
+			webEngine.load("http://www.cmu.edu");
 			break;
 		}
 		
 		case "Bio": {
 			WebEngine webEngine = myWebView.getEngine();
-			webEngine.load("bing.com");
+			webEngine.load("http://www.utexas.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+
+@FXML
+private ChoiceBox<String> majorsSTEMMidLarge;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+
+@FXML
+public void handleMajorsSTEMMidLarge(){
+	majorsSTEMMidLarge.setItems(FXCollections.observableArrayList(
+		"Physics", "Chemistry", "Biology")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsSTEMMidLarge.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsSTEMMidLarge.getItems().get((Integer)number2)){
+		
+		case "Physics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.illinois.edu");
+			break;
+		}
+		
+		case "Chemistry":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.vt.edu");
+			break;
+		}
+		
+		case "Bio": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.unc.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+@FXML
+private ChoiceBox<String> majorsSTEMMidSmall;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsSTEMMidSmall(){
+	majorsSTEMMidSmall.setItems(FXCollections.observableArrayList(
+		"Physics", "Chemistry", "Biology")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsSTEMMidSmall.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsSTEMMidSmall.getItems().get((Integer)number2)){
+		
+		case "Physics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.wustl.edu");
+			break;
+		}
+		
+		case "Chemistry":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.tufts.edu");
+			break;
+		}
+		
+		case "Bio": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.usc.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+@FXML
+private ChoiceBox<String> majorsSTEMLowLarge;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsSTEMLowLarge(){
+	majorsSTEMLowLarge.setItems(FXCollections.observableArrayList(
+		"Physics", "Chemistry", "Biology")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsSTEMLowLarge.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsSTEMLowLarge.getItems().get((Integer)number2)){
+		
+		case "Physics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.uga.edu");
+			break;
+		}
+		
+		case "Chemistry":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.sc.edu");
+			break;
+		}
+		
+		case "Bio": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.washington.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+@FXML
+private ChoiceBox<String> majorsSTEMLowSmall;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsSTEMLowSmall(){
+	majorsSTEMLowSmall.setItems(FXCollections.observableArrayList(
+		"Physics", "Chemistry", "Biology")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsSTEMLowSmall.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsSTEMLowSmall.getItems().get((Integer)number2)){
+		
+		case "Physics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.appstate.edu");
+			break;
+		}
+		
+		case "Chemistry":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.iastate.edu");
+			break;
+		}
+		
+		case "Bio": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.calpoly.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+@FXML
+private ChoiceBox<String> majorsLibArtsHighLarge;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsLibArtsHighLarge(){
+	majorsLibArtsHighLarge.setItems(FXCollections.observableArrayList(
+		"Literature", "History", "Economics")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsLibArtsHighLarge.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsLibArtsHighLarge.getItems().get((Integer)number2)){
+		
+		case "Literature": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.harvard.edu");
+			break;
+		}
+		
+		case "History":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.yale.edu");
+			break;
+		}
+		
+		case "Economics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.princeton.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+@FXML
+private ChoiceBox<String> majorsLibArtsHighSmall;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsLibArtsHighSmall(){
+	majorsLibArtsHighSmall.setItems(FXCollections.observableArrayList(
+		"Literature", "History", "Economics")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsLibArtsHighSmall.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsLibArtsHighSmall.getItems().get((Integer)number2)){
+		
+		case "Literature": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.williams.edu");
+			break;
+		}
+		
+		case "History":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.pomona.edu");
+			break;
+		}
+		
+		case "Economics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.cmc.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+@FXML
+private ChoiceBox<String> majorsLibArtsMidLarge;
+//method that sets majors to specific ChoiceBox options
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+
+@FXML
+public void handleMajorsLibArtsMidLarge(){
+	majorsLibArtsMidLarge.setItems(FXCollections.observableArrayList(
+		"Literature", "History", "Economics")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsLibArtsMidLarge.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsLibArtsMidLarge.getItems().get((Integer)number2)){
+		
+		case "Literature": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.uchicago.edu");
+			break;
+		}
+		
+		case "History":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.upenn.edu");
+			break;
+		}
+		
+		case "Economics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.northwestern.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+
+@FXML
+private ChoiceBox<String> majorsLibArtsMidSmall;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsLibArtsMidSmall(){
+	majorsLibArtsMidSmall.setItems(FXCollections.observableArrayList(
+		"Literature", "History", "Economics")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsLibArtsMidSmall.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsLibArtsMidSmall.getItems().get((Integer)number2)){
+		
+		case "Literature": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.dartmouth.edu");
+			break;
+		}
+		
+		case "History":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.brown.edu");
+			break;
+		}
+		
+		case "Economics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.georgetown.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+@FXML
+private ChoiceBox<String> majorsLibArtsLowLarge;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsLibArtsLowLarge(){
+	majorsLibArtsLowLarge.setItems(FXCollections.observableArrayList(
+		"Literature", "History", "Economics")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsLibArtsLowLarge.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsLibArtsLowLarge.getItems().get((Integer)number2)){
+		
+		case "Literature": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.emory.edu");
+			break;
+		}
+		
+		case "History":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.ucmerced.edu");
+			break;
+		}
+		
+		case "Economics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.auburn.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+
+
+@FXML
+private ChoiceBox<String> majorsLibArtsLowSmall;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+@FXML
+public void handleMajorsLibArtsLowSmall(){
+	majorsLibArtsLowSmall.setItems(FXCollections.observableArrayList(
+		"Journalism", "History", "Economics")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsLibArtsLowSmall.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsLibArtsLowSmall.getItems().get((Integer)number2)){
+		
+		case "Journalism": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.mizzou.edu");
+			break;
+		}
+		
+		case "History":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.olemiss.edu");
+			break;
+		}
+		
+		case "Economics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.boisestate.edu");
+			break;
+		
+		}
+		}
+	}
+
+});
+
+}
+
+
+
+
+@FXML
+private ChoiceBox<String> majorsSTEMHighSmall;
+//method that sets majors to specific ChoiceBox options
+
+/**
+ * @param event
+ * @throws IOException
+ * @return
+ * @see
+ */
+
+@FXML
+public void handleMajorSTEMHighSmall(){
+	majorsSTEMHighSmall.setItems(FXCollections.observableArrayList(
+		"Physics", "Chemistry", "Biology")
+			);
+
+//Generates switch statement for each major that opens a Web View directing to specific college website
+majorsSTEMHighSmall.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>(){
+	@Override
+	public void changed(ObservableValue<? extends Number> observableValue, Number number, Number number2){
+		switch(majorsSTEMHighSmall.getItems().get((Integer)number2)){
+		
+		case "Physics": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.caltech.edu");
+			break;
+		}
+		
+		case "Chemistry":{
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.mit.edu");
+			break;
+		}
+		
+		case "Bio": {
+			WebEngine webEngine = myWebView.getEngine();
+			webEngine.load("http://www.stanford.edu");
 			break;
 		
 		}

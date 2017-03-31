@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootLayoutController">
+   <children>
+      <ChoiceBox fx:id="majorsSTEMLowSmall" layoutX="85.0" layoutY="123.0" onMouseClicked="#handleMajorsSTEMLowSmall" prefWidth="150.0" />
+      <WebView fx:id="myWebView" layoutX="317.0" layoutY="107.0" onMouseClicked="#handleMajorsSTEMLowSmall" prefHeight="213.0" prefWidth="256.0" />
+      <Text layoutX="40.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please indicate your top major choice.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Major and Concentration Preference">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="133.0" fitWidth="200.0" layoutX="57.0" layoutY="200.0">
+         <image>
+            <Image url="@../../../../Pictures/Difference-Between-GED-and-Online-High-School-Diploma.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="355.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your College Match!!">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
 </AnchorPane>
-

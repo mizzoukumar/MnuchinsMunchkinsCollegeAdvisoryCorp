@@ -116,8 +116,9 @@ public class RootLayoutController {
 	}
 	
 	/**
-	 * @param Accepts parameter
+	 * @param event
 	 * @exception IO exception
+	 * Loads beginning view to start college program
 	 */
 	@FXML
 	public void handleType(ActionEvent event) throws IOException{
@@ -157,6 +158,7 @@ public class RootLayoutController {
 	 * @throws IOException
 	 * @return
 	 * @see
+	 * Loads STEM page with choices for size of school
 	 */
 	@FXML
 public void handleScores(ActionEvent event) throws IOException{
@@ -187,6 +189,7 @@ public void handleScores(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Liberal Arts page with choices for size of school
 	 * @return
 	 * @see
 	 */
@@ -218,6 +221,7 @@ public void handleScores(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads page for Low Scores under Liberal Arts category
 	 * @return
 	 * @see
 	 */
@@ -242,6 +246,7 @@ public void handleScores(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Medium Scores page for Liberal Arts category
 	 * @return
 	 * @see
 	 */
@@ -266,6 +271,7 @@ public void handleScores(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads High Scores page for Liberal Arts category
 	 * @return
 	 * @see
 	 */
@@ -292,6 +298,7 @@ public void handleScores(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads High Scores page for STEM category
 	 * @return
 	 * @see
 	 */
@@ -318,6 +325,7 @@ public void handleHighScoresStemSize(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Medium Scores page for STEM category
 	 * @return
 	 * @see
 	 */
@@ -344,6 +352,7 @@ public void handleMediumScoresStemSize(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Low Scores page for STEM category
 	 * @return
 	 * @see
 	 */
@@ -377,6 +386,7 @@ public void handleLowScoresStemSize(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Big Scores page for Liberal Arts schools with low scores
 	 * @return
 	 * @see
 	 */
@@ -403,6 +413,7 @@ public void handleBigLowScoresStem(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Big school size page for STEM schools with medium scores
 	 * @return
 	 * @see
 	 */
@@ -429,6 +440,7 @@ public void handleBigMediumScoresStem(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads Big School size page for STEM schools with high scores
 	 * @return
 	 * @see
 	 */
@@ -453,6 +465,7 @@ public void handleBigHighScoresStem(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads small school size page for STEM schools with high scores
 	 * @return
 	 * @see
 	 */
@@ -477,6 +490,7 @@ public void handleSmallHighScoresStem(ActionEvent event) throws IOException{
 	/**
 	 * @param event
 	 * @throws IOException
+	 * Loads school size page for STEM schools with indicated score range
 	 * @return
 	 * @see
 	 */
@@ -505,6 +519,7 @@ public void handleSmallMediumScoresStem(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -533,6 +548,7 @@ public void handleSmallLowScoresStem(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -559,6 +575,7 @@ public void handleBigLowScoresLibArts(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -585,6 +602,7 @@ public void handleBigMediumScoresLibArts(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -610,6 +628,7 @@ public void handleBigHighScoresLibArts(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -635,6 +654,7 @@ public void handleSmallHighScoresLibArts(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -661,6 +681,7 @@ public void handleSmallMediumScoresLibArts(ActionEvent event) throws IOException
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -695,6 +716,7 @@ public void handleSmallLowScoresLibArts(ActionEvent event) throws IOException{
 /**
  * @param event
  * @throws IOException
+ * Loads school size page for STEM schools with indicated score range
  * @return
  * @see
  */
@@ -727,6 +749,7 @@ private ChoiceBox<String> majors;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -776,6 +799,7 @@ private ChoiceBox<String> majorsSTEMMidLarge;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -824,6 +848,7 @@ private ChoiceBox<String> majorsSTEMMidSmall;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -872,6 +897,7 @@ private ChoiceBox<String> majorsSTEMLowLarge;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -920,6 +946,7 @@ private ChoiceBox<String> majorsSTEMLowSmall;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -967,6 +994,7 @@ private ChoiceBox<String> majorsLibArtsHighLarge;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -1014,6 +1042,7 @@ private ChoiceBox<String> majorsLibArtsHighSmall;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -1061,6 +1090,7 @@ private ChoiceBox<String> majorsLibArtsMidLarge;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -1111,6 +1141,7 @@ private ChoiceBox<String> majorsLibArtsMidSmall;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -1159,6 +1190,7 @@ private ChoiceBox<String> majorsLibArtsLowLarge;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -1209,6 +1241,7 @@ private ChoiceBox<String> majorsLibArtsLowSmall;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
@@ -1259,6 +1292,7 @@ private ChoiceBox<String> majorsSTEMHighSmall;
 /**
  * @param event
  * @throws IOException
+ * Sets items into choice box then loads the college match WebView
  * @return
  * @see
  */
